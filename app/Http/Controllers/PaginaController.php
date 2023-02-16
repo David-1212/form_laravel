@@ -34,7 +34,7 @@ class PaginaController extends Controller
         
         //dd($request-> all(), $request->input('codigo'), $request->nombre);
         $request->validate([
-            'nombre' => 'required|max:15|min:1',
+            'nombre' => 'required|max:15',
             'codigo' => 'required|min:5|max:10'  
         ]);
     }
