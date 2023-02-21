@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PaginaController;
+use App\Http\Controllers\MuebleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,5 +23,6 @@ Route::get('canciones/{id?}', [PaginaController::class, 'canciones']);
 
 Route::get('contacto', [PaginaController::class, 'contacto']);
 Route::post('contacto', [PaginaController::class, 'bautizo']);
+Route::get('mueble', [MuebleController::class, 'index']);
 
 //Route::get('producto', [ProductoController::class, 'index']);

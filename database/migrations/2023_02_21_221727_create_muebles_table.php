@@ -16,7 +16,7 @@ class CreateMueblesTable extends Migration
         Schema::create('muebles', function (Blueprint $table) {
             $table->id();
             $table->string('nombre_mueble');
-            $table->text('descripcion');
+            $table->text('description');
             $table->timestamps();
         });
     }
